@@ -14,3 +14,6 @@ Now, the value at position 1 is multiplied by 1 while the value at position 2 is
 
 Input will only contain lowercase characters and spaces.
 */
+
+
+// Solution
