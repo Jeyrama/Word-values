@@ -26,3 +26,25 @@ function wordValue(a) {
 }
 
 // or
+
+function wordValue(a) {
+
+
+  let returnArray =[], finalArray = [];
+   
+   for(let k = 0; k < a.length ; k++){
+      let word = a[k]
+      let num= 0
+      for(let i = 0; i < word.length; i++){
+         if( word[i] !== ' '){
+               num += word[i].codePointAt() -96     
+         }
+      }
+  returnArray.push(num)
+   }
+      
+      for(let j =0; j < returnArray.length; j++){
+         finalArray.push(returnArray[j] * (j + 1))
+      }
+     return finalArray;
+  }
